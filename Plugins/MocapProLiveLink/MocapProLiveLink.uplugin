@@ -1,0 +1,23 @@
+{
+	"FileVersion": 3,
+	"Version": 7,
+	"VersionName": "1.0.6",
+	"FriendlyName": "Mocap Pro Live Link",
+	"Description": "LiveLink Source for receiving Hand data from Mocap Pro Glove",
+	"Category": "Animation",
+	"CreatedBy": "StretchSense",
+	"CreatedByURL": "https://mocapproglove.com/",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "5.3.0",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "MoCapProLiveLink",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault"
+		}
+	]
+}
