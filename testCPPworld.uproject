@@ -34,10 +34,6 @@
 			"Enabled": true
 		},
 		{
-			"Name": "HandEngineLiveLink",
-			"Enabled": false
-		},
-		{
 			"Name": "LiveLinkViconDataStream",
 			"Enabled": true
 		},
