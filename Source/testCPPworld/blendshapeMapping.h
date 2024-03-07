@@ -14,7 +14,7 @@
 #include "blendshapeMapping.generated.h"
 
 
-
+// Define a struct to represent a target blendshape and its weight
 USTRUCT(BlueprintType)
 struct FTargetBlendshapeAndWeight
 {
@@ -24,11 +24,12 @@ struct FTargetBlendshapeAndWeight
 	FString KeyBlendshape;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float Value = 1.0f;
+	float Weight = 1.0f;
 };
 
+// Define a struct to represent an array of target blendshapes and their weights
 USTRUCT(BlueprintType)
-struct FArrTargetBlendshapesAndWeigths
+struct FArrTargetBlendshapesAndWeights
 {
 	GENERATED_BODY()
 
@@ -36,6 +37,7 @@ struct FArrTargetBlendshapesAndWeigths
 	TArray<FTargetBlendshapeAndWeight> TargetBlendshapes;
 };
 
+// Define a struct to represent mapping from source to target blendshapes
 USTRUCT(BlueprintType)
 struct FSourceToTargetBlendshapes : public FTableRowBase
 {
@@ -43,9 +45,10 @@ struct FSourceToTargetBlendshapes : public FTableRowBase
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TMap<FString, FArrTargetBlendshapesAndWeigths> SourceBlendshape;
+	TMap<FString, FArrTargetBlendshapesAndWeights> SourceBlendshape;
 };
 
+// Define a UObject class to hold the blendshape mapping data
 UCLASS()
 class testCPPworld_API UBlendshapeMapping : public UObject
 {
